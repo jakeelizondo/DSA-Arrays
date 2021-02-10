@@ -70,7 +70,7 @@ class Array {
   }
 }
 
-Array.SIZE_RATIO = 3;
+// QUESTION 2
 
 function main() {
   Array.SIZE_RATIO = 3;
@@ -82,6 +82,39 @@ function main() {
   arr.push(3);
 
   console.log(arr);
+  arr.push(5);
+  arr.push(15);
+  arr.push(19);
+  arr.push(45);
+  arr.push(10);
+  console.log(arr);
+
+  arr.pop();
+  arr.pop();
+  arr.pop();
+  console.log(arr);
+
+  let index1 = arr.get(0);
+  console.log(index1);
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    arr.remove(i);
+  }
+  console.log(arr);
+  arr.push('tauhida');
+  console.log(arr);
+  console.log(arr.get(0));
 }
 
 main();
+
+// length is 1, capacity is 3, memory address is 0 for first log, second log length becomes 6, capacity becomes 12, ptr moves to 3, length of old array
+
+// QUESTION 3
+
+// length becomes 3 after removing 3 values from the original 6 values. capacity remains 12 and memory address remains 3.
+
+// QUESTION 4
+
+// The item returns NaN because the memory array is a Float64Array
+// _resize is used to allocate additional size in memory for the array
