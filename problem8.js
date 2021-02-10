@@ -7,6 +7,8 @@
 //   return longArray;
 // }
 
+// O(n log n) because built in sort is n log n
+
 function mergeArrays(arr1, arr2) {
   let longArray = arr1.concat(arr2);
   let newArray = sort(longArray, 0, 1);
@@ -34,6 +36,8 @@ function sort(arr, curr, next) {
     return sort(arr, curr, next);
   }
 }
+
+// my recursive solution is O(n log n) as well
 
 console.log(mergeArrays([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
 
