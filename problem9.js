@@ -8,7 +8,7 @@ function removeChars(removeChar, str, curr = 0, next = 1) {
     return str;
   }
 
-  // TODO -> refactor to send the substrings into the same function, this splitting would make it even more recursive and possibly n log n rather than n^2
+  // TODO -> refactor to send the substrings into the same function, split and split in half until evaluating a single letter -> this splitting would make it even more recursive and possibly n log n rather than n^2
 
   if (str[str.length - 1] === removeChar) {
     str = str.substr(0, str.length - 1);
