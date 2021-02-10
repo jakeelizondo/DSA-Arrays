@@ -43,4 +43,17 @@ console.log(
 ); // 'Bttl f th Vwls: Hw vs. Grzny'
 // console.log(removeChars('a', 'paple')); // 'pple'
 // console.log(removeChars('a', 'pepa')); // 'pep'
-// console.log(removeChars('a', 'papa')); // 'pp'
+// console.log(removeChars('a', 'papapapapa')); // 'ppppp'
+
+// Ian version
+
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(find, 'g'), replace);
+}
+function removeCharacters(str, rmv) {
+  let filterString = str;
+  for (let i = 0; i < rmv.length; i++) {
+    filterString = replaceAll(filterString, rmv[i], '');
+  }
+  return filterString;
+}
