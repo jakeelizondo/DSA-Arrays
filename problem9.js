@@ -47,13 +47,13 @@ console.log(
 
 // Ian version
 
-function replaceAll(str, find, replace) {
-  return str.replace(new RegExp(find, 'g'), replace);
-}
-function removeCharacters(str, rmv) {
-  let filterString = str;
-  for (let i = 0; i < rmv.length; i++) {
-    filterString = replaceAll(filterString, rmv[i], '');
-  }
-  return filterString;
-}
+// function replaceAll(str, find, replace) {
+//   return str.replace(new RegExp(find, 'g'), replace);
+// }
+// function removeCharacters(str, rmv) {
+//   let filterString = str;
+//   for (let i = 0; i < rmv.length; i++) {
+//     filterString = replaceAll(filterString, rmv[i], '');
+//   }
+//   return filterString;
+// }
